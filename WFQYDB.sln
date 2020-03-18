@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFQYDB", "WFQYDB\WFQYDB.csproj", "{A3239C86-9850-4E5F-B94B-82175C7DB500}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFQYDB emu", "WFQYDB emu\WFQYDB emu.csproj", "{A2E34C77-B289-4C3F-AFA9-643848278BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF svr", "WF svr\WF svr.csproj", "{041E5149-AB85-448D-B463-BD8DCE31D90F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuiExperCF", "TuiExperCF\TuiExperCF.csproj", "{C475B2C2-5D9D-4E6D-8D7F-318207B4E9DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WfqydbModbusGateway", "WfqydbModbusGateway\WfqydbModbusGateway.csproj", "{A3A86701-4026-4970-AFE6-57C397AE95A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpPortLogger", "TcpPortLogger\TcpPortLogger.csproj", "{61F56484-026D-4FC6-A616-FE573D892BBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28354F77-CF3A-4944-AA80-3FC3933FB8AA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3239C86-9850-4E5F-B94B-82175C7DB500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3239C86-9850-4E5F-B94B-82175C7DB500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3239C86-9850-4E5F-B94B-82175C7DB500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3239C86-9850-4E5F-B94B-82175C7DB500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E34C77-B289-4C3F-AFA9-643848278BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E34C77-B289-4C3F-AFA9-643848278BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E34C77-B289-4C3F-AFA9-643848278BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E34C77-B289-4C3F-AFA9-643848278BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041E5149-AB85-448D-B463-BD8DCE31D90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041E5149-AB85-448D-B463-BD8DCE31D90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041E5149-AB85-448D-B463-BD8DCE31D90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041E5149-AB85-448D-B463-BD8DCE31D90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C475B2C2-5D9D-4E6D-8D7F-318207B4E9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C475B2C2-5D9D-4E6D-8D7F-318207B4E9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C475B2C2-5D9D-4E6D-8D7F-318207B4E9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C475B2C2-5D9D-4E6D-8D7F-318207B4E9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A86701-4026-4970-AFE6-57C397AE95A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A86701-4026-4970-AFE6-57C397AE95A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A86701-4026-4970-AFE6-57C397AE95A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A86701-4026-4970-AFE6-57C397AE95A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F56484-026D-4FC6-A616-FE573D892BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F56484-026D-4FC6-A616-FE573D892BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F56484-026D-4FC6-A616-FE573D892BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F56484-026D-4FC6-A616-FE573D892BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E9048CF-6505-4F8F-88CB-FEEB1047D382}
+	EndGlobalSection
+EndGlobal

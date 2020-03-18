@@ -1,0 +1,99 @@
+﻿<cf:Window Name="MainWin" Title="ModbusCnv"
+        xmlns:x="http://consoleframework.org/xaml.xsd"
+        xmlns:cf="clr-namespace:ConsoleFramework.Controls;assembly=ConsoleFramework"        
+        xmlns:xaml="clr-namespace:ConsoleFramework.Xaml;assembly=ConsoleFramework"
+        xmlns:convs="clr-namespace:WfqydbModbusGateway.Converters;assembly=WfqydbModbusGateway"
+        >
+  <Window.Resources>
+    <convs:ObjectToStringConverter x:Key="1" x:Id="obj2str"/>
+    <convs:StringToColorConverter x:Key="2" x:Id="str2color"/>
+  </Window.Resources>
+  
+  <Panel>
+
+    <GroupBox Title="ModbusSlave" HorizontalAlignment="Stretch" >
+      <Panel Orientation="Horizontal">
+        <TextBlock Text="Connection:" Color="DarkGray" Margin="1,0,1,0"/>
+        <TextBlock Text="{Binding Path=ConnnectionModbusCfg, Mode=OneWay}" />
+      </Panel>
+    </GroupBox>
+
+    <GroupBox Title="WFQYDB" HorizontalAlignment="Stretch" >
+
+      <Panel>
+        <Panel Orientation="Horizontal">
+          <TextBlock Text="Connection:" Color="DarkGray" Margin="1,0,1,0"/>
+          <TextBlock Text="{Binding Path=ConnnectionWfqydbCfg, Mode=OneWay}" />
+        </Panel>
+
+        
+        <GroupBox Title="Last Response" HorizontalAlignment="Stretch">
+          <Panel>
+            <Grid HorizontalAlignment="Stretch">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+              
+                <RowDefinition/>
+                <RowDefinition/>
+              </Grid.RowDefinitions>
+
+              <TextBlock Text="LastTime:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseDateTime, Mode=OneWay}" />
+
+              <TextBlock Text="Cmd:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseLastCmd, Mode=OneWay}" />
+
+              <TextBlock Text="Up freq:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseUpFreq, Mode=OneWay}" />
+
+              <TextBlock Text="Down freq:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseDnFreq, Mode=OneWay}" />
+            
+              <TextBlock Text="StokeLength:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseStokeLength, Mode=OneWay}" />
+
+              <TextBlock Text="StokeRate:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseStokeRate, Mode=OneWay}" />
+
+              <TextBlock Text="Status:" Color="DarkGray" Margin="1,0,1,0"/>
+              <TextBlock Text="{Binding LastResponseStatusByte, Mode=OneWay}" />
+
+            </Grid>
+          
+            <Panel Orientation="Horizontal"  HorizontalAlignment="Stretch">
+              <TextBlock Margin="1,0,1,0"
+                Text="{Binding Path=LastResponseStatusStart, Mode=OneWay}"
+                Color="{Binding Path=LastResponseStatusStartColor, Mode=OneWay}"/>
+              
+              <TextBlock  Margin="1,0,1,0"
+                Text="{Binding LastResponseStatusShortCircuit, Mode=OneWay}" 
+                Color="{Binding Path=LastResponseStatusShortCircuitColor, Mode=OneWay}"/>
+
+              <TextBlock  Margin="1,0,1,0"
+                Text="{Binding LastResponseStatusOverTemp, Mode=OneWay}"
+                Color="{Binding Path=LastResponseStatusOverTempColor, Mode=OneWay}"         />
+              <TextBlock  Margin="1,0,1,0"
+                Text="{Binding LastResponseStatusOverLoad, Mode=OneWay}"
+                Color="{Binding Path=LastResponseStatusOverLoadColor, Mode=OneWay}"         />
+            </Panel>
+          </Panel>
+        </GroupBox>
+      
+        <GroupBox Title="Story" HorizontalAlignment="Stretch" >
+          <TextBlock Text="not implemented" Color="DarkGray"/>
+          <!--<ListBox HorizontalAlignment="Stretch"  
+               Items="{Binding Path=Story, Mode=OneWay}"/>-->
+        </GroupBox>
+      </Panel>
+    </GroupBox>
+  </Panel>
+
+</cf:Window>
